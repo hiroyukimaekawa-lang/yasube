@@ -17,61 +17,263 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="index.html" class="logo">安兵衛</a>
-        <nav class="nav" aria-label="メインナビゲーション">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="mainNav" aria-label="メインナビゲーション">
           <a href="index.html">トップ</a>
-          <a href="about.html">お店について</a>
-          <a href="menu.html" class="is-current">メニュー</a>
-          <a href="access.html">店舗情報・アクセス</a>
-          <a href="reserve.html">ご予約</a>
-          <a href="news.html">お知らせ</a>
+          <a href="index.html#about">お店について</a>
+          <a href="menu.html#menu-top" class="is-current">メニュー</a>
+          <a href="index.html#store-info">店舗情報・アクセス</a>
+          <a href="reserve.html#reserve-top">ご予約</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="sub-hero">
+      <section class="sub-hero" id="menu-top">
         <div class="container">
           <p class="eyebrow">MENU</p>
           <h1>メニュー</h1>
-          <p>焼鳥・ドリンク・コース料理をご案内します。価格の詳細は写真素材・メニュー表確定後に反映します。</p>
         </div>
       </section>
 
       <section class="section container menu-block">
-        <div class="section-head"><h2>焼鳥メニュー</h2></div>
-        <div class="cards three">
-          <article class="card">
-            <p class="tag">定番串</p>
-            <h3>とりねぎ / 皮 / レバー</h3>
-            <p>安兵衛の基本となる人気串。1本から気軽にご注文いただけます。</p>
-          </article>
-          <article class="card">
-            <p class="tag">野菜串</p>
-            <h3>椎茸 / じゃがいも など</h3>
-            <p>焼鳥の合間に嬉しい、香りと食感を楽しめる野菜串です。</p>
-          </article>
-          <article class="card">
-            <p class="tag">変わり串</p>
-            <h3>季節・おすすめ串</h3>
-            <p>その日の仕入れに合わせた、少し変わった串もご用意します。</p>
-          </article>
+        <div class="section-head"><h2>食べ物（Food）</h2></div>
+        <div class="menu-accordion">
+          <details class="menu-dropdown">
+            <summary><span>焼き鳥</span><span class="menu-open-text">詳細はこちら</span></summary>
+            <div class="menu-dropdown-body">
+              <p><strong>鶏（Chicken）</strong></p>
+              <ul class="simple-list">
+                <li>とりねぎ：220円</li>
+                <li>とりしいたけ：220円</li>
+                <li>とりししとう：220円</li>
+                <li>とりピーマン：220円</li>
+                <li>レバー：220円</li>
+                <li>砂肝：220円</li>
+                <li>はつ：240円</li>
+                <li>皮：220円</li>
+                <li>手羽：270円</li>
+                <li>つくね：220円</li>
+                <li>ぼんぼち：240円</li>
+                <li>せせり：240円</li>
+                <li>軟骨：240円</li>
+              </ul>
+              <p><strong>豚（Pork）</strong></p>
+              <ul class="simple-list">
+                <li>豚串：250円</li>
+                <li>豚ねぎ：250円</li>
+                <li>豚ピーマン：250円</li>
+                <li>豚タン下：240円</li>
+                <li>かしら：240円</li>
+                <li>チグチ（豚の喉の奥のお肉）：240円</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="menu-dropdown">
+            <summary><span>野菜ぐし</span><span class="menu-open-text">詳細はこちら</span></summary>
+            <div class="menu-dropdown-body">
+              <p><strong>巻き物（Rolls）</strong></p>
+              <ul class="simple-list">
+                <li>しそ巻き：240円</li>
+                <li>トマト巻き：280円</li>
+                <li>オクラ巻き（2本）：480円</li>
+                <li>アスパラ巻き（2本）：480円</li>
+              </ul>
+              <p><strong>野菜・その他（Vegetables & Others）</strong></p>
+              <ul class="simple-list">
+                <li>じゃがいも：250円</li>
+                <li>しいたけ焼：350円</li>
+                <li>ししとう焼：280円</li>
+                <li>ピーマン焼：280円</li>
+                <li>いかだ：300円</li>
+                <li>銀杏：時価</li>
+                <li>ホタテ串焼き：480円</li>
+                <li>牛タン（2本）：時価</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="menu-dropdown">
+            <summary><span>一品</span><span class="menu-open-text">詳細はこちら</span></summary>
+            <div class="menu-dropdown-body">
+              <p><strong>おすすめ・肉料理</strong></p>
+              <ul class="simple-list">
+                <li>牛もつの煮込み：580円</li>
+                <li>とり刺し：600円</li>
+                <li>ささみの酢みそ：600円</li>
+                <li>ささみの山かけ：650円</li>
+                <li>ささみの梅しそ和え：650円</li>
+                <li>ささみときゅうりの中華風：550円</li>
+                <li>ささみとかいわれの中華風：550円</li>
+              </ul>
+              <p><strong>冷菜・おつまみ</strong></p>
+              <ul class="simple-list">
+                <li>味ダコ：650円</li>
+                <li>こんにゃくの刺身：500円</li>
+                <li>しらすおろし / なめこおろし：各 550円</li>
+                <li>冷やしトマト / オニオンスライス：各 450円</li>
+                <li>もろきゅう / 梅きゅう：各 450円</li>
+                <li>エシャレット：550円</li>
+                <li>お新香：500円</li>
+                <li>やっこ / 厚揚げ：各 450円</li>
+              </ul>
+              <p><strong>サラダ・温菜</strong></p>
+              <ul class="simple-list">
+                <li>生野菜 / 豆腐サラダ：各 950円</li>
+                <li>湯豆腐（冬季限定）：950円</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="menu-dropdown">
+            <summary><span>ご飯</span><span class="menu-open-text">詳細はこちら</span></summary>
+            <div class="menu-dropdown-body">
+              <ul class="simple-list">
+                <li>おにぎり（梅・昆布・おかか）：各 330円</li>
+                <li>焼きおにぎり（2ヶ〜）：1ヶ 330円</li>
+                <li>うめ雑炊：880円</li>
+                <li>とり雑炊：880円</li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
 
       <section class="section section-alt">
         <div class="container menu-block">
-          <div class="section-head"><h2>ドリンクメニュー</h2></div>
-          <div class="cards two">
-            <article class="card">
-              <p class="tag">日本酒ラインナップ</p>
-              <h3>定番 + 季節限定</h3>
-              <p>焼鳥との相性を重視して、日本酒を中心に取り揃えています。</p>
-            </article>
-            <article class="card">
-              <p class="tag">その他のお酒</p>
-              <h3>ビール / 焼酎 / サワー など</h3>
-              <p>お好みに合わせて幅広くお選びいただけます。</p>
-            </article>
+          <div class="section-head"><h2>ドリンク（Drink）</h2></div>
+          <div class="menu-accordion">
+            <details class="menu-dropdown">
+              <summary><span>日本酒（Sake）</span><span class="menu-open-text">詳細はこちら</span></summary>
+              <div class="menu-dropdown-body">
+                <p><strong>定番・地酒（一合 / 二合）</strong></p>
+                <ul class="simple-list">
+                  <li>菊正宗（灘）：一合 550円 / 二合 1,000円</li>
+                  <li>なぷら 純米吟醸（岐阜）：一合 700円 / 二合 1,300円</li>
+                  <li>梅錦 吟醸（愛媛）：一合 700円 / 二合 1,300円</li>
+                  <li>福小町 純米（秋田）：一合 750円 / 二合 1,400円</li>
+                  <li>浦霞 本醸造（宮城）：一合 750円 / 二合 1,400円</li>
+                  <li>吉乃川 特別吟醸（新潟）：一合 800円 / 二合 1,500円</li>
+                  <li>底ぬけ（裏ラベル） 純米（新潟）：一合 800円 / 二合 1,500円</li>
+                  <li>広島錦 純米（広島）：一合 800円 / 二合 1,500円</li>
+                  <li>水芭蕉 純米吟醸（群馬）：一合 800円 / 二合 1,500円</li>
+                  <li>丹沢山 純米吟醸（神奈川）：一合 850円 / 二合 1,600円</li>
+                  <li>蒼田 特別純米（福岡）：一合 850円 / 二合 1,600円</li>
+                  <li>苗加屋 特別純米（富山）：一合 850円 / 二合 1,600円</li>
+                </ul>
+                <p><strong>厳選地酒（一合 / 四合瓶）</strong></p>
+                <ul class="simple-list">
+                  <li>真澄 奥伝寒造り 純米（長野）：一合 900円 / 四合瓶 3,500円</li>
+                  <li>今錦 純米吟醸（長野）：一合 1,100円 / 四合瓶 4,200円</li>
+                  <li>八海山 大吟醸（新潟）：一合 1,200円 / 四合瓶 4,600円</li>
+                </ul>
+                <p><strong>スパークリング・飲みきり・その他</strong></p>
+                <ul class="simple-list">
+                  <li>八海山 発泡にごり酒（360ml）：2,200円</li>
+                  <li>澪 スパークリング清酒（300ml）：1,000円</li>
+                  <li>菊水 ふなぐち一番しぼり（200ml）：900円</li>
+                  <li>生貯蔵酒 菊正宗（300ml）：850円</li>
+                  <li>樽酒 菊正宗（300ml）：950円</li>
+                  <li>升笑 純米超辛口酒（兵庫・300ml）：1,580円</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="menu-dropdown">
+              <summary><span>焼酎（Shochu）</span><span class="menu-open-text">詳細はこちら</span></summary>
+              <div class="menu-dropdown-body">
+                <p><strong>芋焼酎</strong></p>
+                <ul class="simple-list">
+                  <li>一刻者 石蔵甕貯蔵：ボトル 5,800円</li>
+                  <li>一刻者：ボトル 3,800円 / グラス 650円</li>
+                  <li>一刻者 -赤-：ボトル 3,800円 / グラス 650円</li>
+                  <li>エンヴェレシーダ 琥珀貯蔵：ボトル 4,500円 / グラス 700円</li>
+                  <li>天使の誘惑：ボトル 7,700円 / グラス 990円</li>
+                  <li>富乃宝山：ボトル 4,200円 / グラス 700円</li>
+                  <li>吉兆宝山：ボトル 4,200円 / グラス 700円</li>
+                  <li>天孫降臨：ボトル 3,300円 / グラス 600円</li>
+                </ul>
+                <p><strong>その他 焼酎・泡盛</strong></p>
+                <ul class="simple-list">
+                  <li>【米】鳥飼：ボトル 4,500円 / グラス 750円</li>
+                  <li>【麦】いいちこ：ボトル 3,000円 / グラス 600円</li>
+                  <li>【麦】白水：ボトル 2,800円 / グラス 600円</li>
+                  <li>【黒胡麻】黒胡宝：ボトル 3,000円 / グラス 600円</li>
+                  <li>【泡盛】akari（菊之露酒造）：ボトル 2,800円 / グラス 550円</li>
+                  <li>【甲類】ジャパン：ボトル 2,200円</li>
+                </ul>
+                <p class="callout">※炭酸割りは ＋50円</p>
+              </div>
+            </details>
+
+            <details class="menu-dropdown">
+              <summary><span>ウイスキー・ハイボール</span><span class="menu-open-text">詳細はこちら</span></summary>
+              <div class="menu-dropdown-body">
+                <ul class="simple-list">
+                  <li>スーパーニッカ：ボトル 5,800円 / シングル 650円</li>
+                  <li>陸：ボトル 3,800円 / シングル 600円</li>
+                  <li>角：ボトル 4,800円 / シングル 550円</li>
+                </ul>
+                <p><strong>ハイボール各種</strong></p>
+                <ul class="simple-list">
+                  <li>角ハイボール：600円</li>
+                  <li>陸ハイボール / ジンジャーハイボール / コークハイボール：各 650円</li>
+                  <li>スーパーニッカソーダ：700円</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="menu-dropdown">
+              <summary><span>ビール・サワー・カクテル</span><span class="menu-open-text">詳細はこちら</span></summary>
+              <div class="menu-dropdown-body">
+                <p><strong>ビール</strong></p>
+                <ul class="simple-list">
+                  <li>キリン一番搾り：中ジョッキ 650円 / グラス 500円</li>
+                  <li>瓶ビール（各 700円）：キリンラガー・一番搾り・晴れ風 / アサヒスーパードライ</li>
+                  <li>キリングリーンズフリー（ノンアルコール）：500円</li>
+                </ul>
+                <p><strong>焼酎割り・サワー（極上宝焼酎使用）</strong></p>
+                <ul class="simple-list">
+                  <li>サワー各種（600円）：レモンサワー / 緑茶割り / ウーロン割り / チュウハイ / ライムサワー / ええそーだ（泡盛×ソーダ）</li>
+                  <li>グレープフルーツハイ：650円</li>
+                  <li>梅干しサワー：750円</li>
+                </ul>
+                <p><strong>カクテル（ジン・ウォッカ・カシスなど）</strong></p>
+                <ul class="simple-list">
+                  <li>翠ジン（ソーダ・ライム・トニック・バック）：各 650円</li>
+                  <li>カシス（ソーダ・ウーロン）：各 650円</li>
+                  <li>カシス（オレンジ・グレープフルーツ）：各 750円</li>
+                  <li>オレンジブロッサム / スクリュードライバー：各 750円</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="menu-dropdown">
+              <summary><span>梅酒・ワイン・ソフトドリンク</span><span class="menu-open-text">詳細はこちら</span></summary>
+              <div class="menu-dropdown-body">
+                <p><strong>梅酒・果実酒</strong></p>
+                <ul class="simple-list">
+                  <li>梅酒 / あんずのお酒：各 500円</li>
+                  <li>紅茶梅酒：550円</li>
+                  <li>にごり梅酒：650円</li>
+                </ul>
+                <p class="callout">※各種ソーダ割りは ＋50円</p>
+                <p><strong>ワイン</strong></p>
+                <ul class="simple-list">
+                  <li>ムーラン・ド・ガサック ギレム ブラン（白・フランス）：ボトル 3,800円</li>
+                  <li>シャトー グリモン（赤・フランス）：ボトル 3,800円</li>
+                  <li>赤ハイ（赤ワイン＋ソーダ）：600円</li>
+                </ul>
+                <p><strong>ソフトドリンク</strong></p>
+                <ul class="simple-list">
+                  <li>各 400円：コカコーラ / ジンジャエール / レモンジュース / バヤリースオレンジ / ウーロン茶 / 緑茶</li>
+                  <li>各 450円：100%オレンジジュース / 100%グレープフルーツジュース</li>
+                </ul>
+              </div>
+            </details>
           </div>
         </div>
       </section>
@@ -79,7 +281,6 @@
       <section class="section container menu-block">
         <div class="section-head">
           <h2>コース料理</h2>
-          <p class="notice">2月末より料金改定（3,500円→3,800円 / 4,000円→4,300円）</p>
         </div>
         <div class="cards two">
           <article class="card">
@@ -88,7 +289,7 @@
             <p class="callout"><a class="btn btn-outline" href="course-3800.html">詳細を見る</a></p>
           </article>
           <article class="card">
-            <h3>4,300円コース</h3>
+            <h3>4,500円コース</h3>
             <p>旧4,000円コース。おすすめ串と逸品をバランスよく味わえる構成。</p>
             <p class="callout"><a class="btn btn-outline" href="course-4300.html">詳細を見る</a></p>
           </article>
@@ -97,14 +298,48 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 安兵衛</p>
-        <a href="access.html">次へ: 店舗情報・アクセス</a>
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <p class="eyebrow">YAKITORI IZAKAYA</p>
+          <h3>安兵衛</h3>
+          <p>気取らず、うまいものを、気軽に。<br />横浜・野毛で40年以上続く焼鳥屋です。</p>
+        </div>
+        <div class="footer-links-wrap">
+          <div>
+            <p class="footer-title">サイトメニュー</p>
+            <ul class="footer-links">
+              <li><a href="index.html">トップ</a></li>
+              <li><a href="index.html#about">お店について</a></li>
+              <li><a href="menu.html#menu-top">メニュー</a></li>
+              <li><a href="index.html#store-info">店舗情報・アクセス</a></li>
+              <li><a href="reserve.html#reserve-top">ご予約</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-title">コース</p>
+            <ul class="footer-links">
+              <li><a href="course-3800.html">3,800円コース</a></li>
+              <li><a href="course-4300.html">4,500円コース</a></li>
+              <li><a href="https://www.instagram.com/noge_yasube/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://maps.app.goo.gl/m1rqPvT1QTfVCY59A" target="_blank" rel="noopener noreferrer">Googleマップ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-contact">
+        <a class="btn btn-primary" href="tel:0452511891">045-251-1891</a>
+        <a class="btn btn-outline" href="https://www.instagram.com/noge_yasube/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="btn btn-outline" href="https://maps.app.goo.gl/m1rqPvT1QTfVCY59A" target="_blank" rel="noopener noreferrer">Googleマップ</a>
+      </div>
+      <div class="container footer-bottom">
+        <p>〒231-0064 神奈川県横浜市中区野毛町2丁目101-7</p>
+        <p>© 安兵衛 All Rights Reserved.</p>
       </div>
     </footer>
 
     <div class="floating-call">
       <a class="btn btn-primary" href="tel:0452511891">電話予約 045-251-1891</a>
     </div>
+      <script src="main.js"></script>
   </body>
 </html>

@@ -17,19 +17,21 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="index.html" class="logo">安兵衛</a>
-        <nav class="nav" aria-label="メインナビゲーション">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="mainNav" aria-label="メインナビゲーション">
           <a href="index.html">トップ</a>
-          <a href="about.html">お店について</a>
-          <a href="menu.html">メニュー</a>
-          <a href="access.html">店舗情報・アクセス</a>
-          <a href="reserve.html" class="is-current">ご予約</a>
-          <a href="news.html">お知らせ</a>
+          <a href="index.html#about">お店について</a>
+          <a href="menu.html#menu-top">メニュー</a>
+          <a href="index.html#store-info">店舗情報・アクセス</a>
+          <a href="reserve.html#reserve-top" class="is-current">ご予約</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="sub-hero">
+      <section class="sub-hero" id="reserve-top">
         <div class="container">
           <p class="eyebrow">RESERVE</p>
           <h1>ご予約</h1>
@@ -69,14 +71,48 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 安兵衛</p>
-        <a href="news.html">次へ: お知らせ</a>
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <p class="eyebrow">YAKITORI IZAKAYA</p>
+          <h3>安兵衛</h3>
+          <p>気取らず、うまいものを、気軽に。<br />横浜・野毛で40年以上続く焼鳥屋です。</p>
+        </div>
+        <div class="footer-links-wrap">
+          <div>
+            <p class="footer-title">サイトメニュー</p>
+            <ul class="footer-links">
+              <li><a href="index.html">トップ</a></li>
+              <li><a href="index.html#about">お店について</a></li>
+              <li><a href="menu.html#menu-top">メニュー</a></li>
+              <li><a href="index.html#store-info">店舗情報・アクセス</a></li>
+              <li><a href="reserve.html#reserve-top">ご予約</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-title">コース</p>
+            <ul class="footer-links">
+              <li><a href="course-3800.html">3,800円コース</a></li>
+              <li><a href="course-4300.html">4,500円コース</a></li>
+              <li><a href="https://www.instagram.com/noge_yasube/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://maps.app.goo.gl/m1rqPvT1QTfVCY59A" target="_blank" rel="noopener noreferrer">Googleマップ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-contact">
+        <a class="btn btn-primary" href="tel:0452511891">045-251-1891</a>
+        <a class="btn btn-outline" href="https://www.instagram.com/noge_yasube/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="btn btn-outline" href="https://maps.app.goo.gl/m1rqPvT1QTfVCY59A" target="_blank" rel="noopener noreferrer">Googleマップ</a>
+      </div>
+      <div class="container footer-bottom">
+        <p>〒231-0064 神奈川県横浜市中区野毛町2丁目101-7</p>
+        <p>© 安兵衛 All Rights Reserved.</p>
       </div>
     </footer>
 
     <div class="floating-call">
       <a class="btn btn-primary" href="tel:0452511891">電話予約 045-251-1891</a>
     </div>
+      <script src="main.js"></script>
   </body>
 </html>

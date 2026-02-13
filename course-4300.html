@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4,300円コース | 安兵衛</title>
-    <meta name="description" content="安兵衛 4,300円コース（旧4,000円コース）の詳細。" />
+    <title>4,500円コース | 安兵衛</title>
+    <meta name="description" content="安兵衛 4,500円コース（旧4,000円コース）の詳細。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +17,15 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="index.html" class="logo">安兵衛</a>
-        <nav class="nav" aria-label="メインナビゲーション">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="mainNav" aria-label="メインナビゲーション">
           <a href="index.html">トップ</a>
-          <a href="about.html">お店について</a>
-          <a href="menu.html" class="is-current">メニュー</a>
-          <a href="access.html">店舗情報・アクセス</a>
-          <a href="reserve.html">ご予約</a>
-          <a href="news.html">お知らせ</a>
+          <a href="index.html#about">お店について</a>
+          <a href="menu.html#menu-top" class="is-current">メニュー</a>
+          <a href="index.html#store-info">店舗情報・アクセス</a>
+          <a href="reserve.html#reserve-top">ご予約</a>
         </nav>
       </div>
     </header>
@@ -32,56 +34,103 @@
       <section class="sub-hero">
         <div class="container">
           <p class="eyebrow">COURSE PLAN</p>
-          <h1>4,300円コース</h1>
-          <p>旧4,000円コースを4,300円でご提供しています。</p>
+          <h1>4,500円コース</h1>
+          <p>旧4,000円コースを4,500円でご提供しています。</p>
         </div>
       </section>
 
       <section class="section container">
-        <div class="cards two">
-          <article class="card">
-            <h2>コース概要</h2>
-            <ul class="simple-list">
-              <li>価格: 4,300円（税込）</li>
-              <li>利用シーン: 接待 / 記念日 / しっかり会食</li>
-              <li>予約方法: 電話予約</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h2>コース内容（仮）</h2>
-            <ul class="simple-list">
-              <li>前菜</li>
-              <li>本日の一品</li>
-              <li>おすすめ焼鳥盛り合わせ</li>
-              <li>名物料理</li>
-              <li>揚げ物 / 煮込み</li>
-              <li>〆の一品</li>
-              <li>甘味</li>
-            </ul>
-            <p class="callout">正式メニュー確定後、内容・品数を更新します。</p>
-          </article>
-        </div>
+        <article class="card course-content-card">
+          <h2 class="course-content-title">コース内容</h2>
+          <p><strong>小鉢・前菜</strong></p>
+          <ul class="simple-list">
+            <li>お通し・味だこ</li>
+            <li>こんにゃくのお刺身</li>
+          </ul>
+          <p><strong>煮込み・サラダ</strong></p>
+          <ul class="simple-list">
+            <li>牛もつの煮込み</li>
+            <li>豆腐サラダ</li>
+          </ul>
+          <p><strong>焼き鳥・串焼き（10種）</strong></p>
+          <ul class="simple-list">
+            <li>【タレ】つくね・レバ・皮</li>
+            <li>【塩】とりねぎ・せせり</li>
+            <li>【塩】しそ巻き・アスパラ巻き</li>
+            <li>しいたけ焼き</li>
+            <li>銀杏</li>
+            <li>トマト巻き</li>
+          </ul>
+          <p><strong>箸休め・〆・デザート</strong></p>
+          <ul class="simple-list">
+            <li>お新香</li>
+            <li>梅雑炊</li>
+            <li>季節のフルーツ</li>
+          </ul>
+        </article>
       </section>
 
       <section class="section section-alt">
         <div class="container">
           <div class="card">
-            <h2>写真（準備中）</h2>
-            <div class="ph large">4,300円コース写真を配置予定</div>
+            <div class="course-photo-slider" aria-label="コース写真スライダー">
+              <div class="course-photo-track">
+                <img src="img/food2.jpg" alt="料理写真" />
+                <img src="img/alc3.jpg" alt="ドリンク写真" />
+                <img src="img/yakitori3.png" alt="焼き鳥写真" />
+                <img src="img/food4.png" alt="料理写真" />
+                <img src="img/alc2.jpg" alt="ドリンク写真" />
+                <img src="img/yakitori2.png" alt="焼き鳥写真" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 安兵衛</p>
-        <a href="menu.html">メニューへ戻る</a>
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <p class="eyebrow">YAKITORI IZAKAYA</p>
+          <h3>安兵衛</h3>
+          <p>気取らず、うまいものを、気軽に。<br />横浜・野毛で40年以上続く焼鳥屋です。</p>
+        </div>
+        <div class="footer-links-wrap">
+          <div>
+            <p class="footer-title">サイトメニュー</p>
+            <ul class="footer-links">
+              <li><a href="index.html">トップ</a></li>
+              <li><a href="index.html#about">お店について</a></li>
+              <li><a href="menu.html#menu-top">メニュー</a></li>
+              <li><a href="index.html#store-info">店舗情報・アクセス</a></li>
+              <li><a href="reserve.html#reserve-top">ご予約</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-title">コース</p>
+            <ul class="footer-links">
+              <li><a href="course-3800.html">3,800円コース</a></li>
+              <li><a href="course-4300.html">4,500円コース</a></li>
+              <li><a href="https://www.instagram.com/noge_yasube/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://maps.app.goo.gl/m1rqPvT1QTfVCY59A" target="_blank" rel="noopener noreferrer">Googleマップ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-contact">
+        <a class="btn btn-primary" href="tel:0452511891">045-251-1891</a>
+        <a class="btn btn-outline" href="https://www.instagram.com/noge_yasube/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="btn btn-outline" href="https://maps.app.goo.gl/m1rqPvT1QTfVCY59A" target="_blank" rel="noopener noreferrer">Googleマップ</a>
+      </div>
+      <div class="container footer-bottom">
+        <p>〒231-0064 神奈川県横浜市中区野毛町2丁目101-7</p>
+        <p>© 安兵衛 All Rights Reserved.</p>
       </div>
     </footer>
 
     <div class="floating-call">
       <a class="btn btn-primary" href="tel:0452511891">このコースを電話予約</a>
     </div>
+      <script src="main.js"></script>
   </body>
 </html>
