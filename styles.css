@@ -474,6 +474,10 @@ img {
   flex: 0 0 auto;
 }
 
+.about-photo-slider {
+  margin: 18px 0 8px;
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -602,6 +606,16 @@ img {
 
 .read-more[open] summary {
   display: none;
+}
+
+@media (min-width: 961px) {
+  .read-more summary {
+    display: none;
+  }
+
+  .read-more:not([open]) > *:not(summary) {
+    display: block;
+  }
 }
 
 .menu-block {
