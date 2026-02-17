@@ -157,7 +157,7 @@ img {
   object-fit: cover;
   object-position: center;
   opacity: 0;
-  animation: heroCarousel 30s infinite;
+  animation: heroCarousel 25s infinite;
 }
 
 .hero-slide.h1 {
@@ -178,10 +178,6 @@ img {
 
 .hero-slide.h5 {
   animation-delay: 20s;
-}
-
-.hero-slide.h6 {
-  animation-delay: 25s;
 }
 
 .hero::after {
@@ -378,7 +374,7 @@ img {
   object-fit: cover;
   object-position: center;
   opacity: 0;
-  animation: promoSlide 50s infinite;
+  animation: promoSlide 25s infinite;
 }
 
 .menu-promo-visual .promo-slide {
@@ -1025,6 +1021,12 @@ img {
 
   .menu-promo-visual {
     min-height: 320px;
+    background: #1b1a18;
+  }
+
+  .menu-promo-visual .slide {
+    object-fit: contain;
+    object-position: center;
   }
 
   .course-promo {
