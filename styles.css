@@ -157,7 +157,7 @@ img {
   object-fit: cover;
   object-position: center;
   opacity: 0;
-  animation: heroCarousel 25s infinite;
+  animation: heroCarousel 35s infinite;
 }
 
 .hero-slide.h1 {
@@ -178,6 +178,14 @@ img {
 
 .hero-slide.h5 {
   animation-delay: 20s;
+}
+
+.hero-slide.h6 {
+  animation-delay: 25s;
+}
+
+.hero-slide.h7 {
+  animation-delay: 30s;
 }
 
 .hero::after {
@@ -374,7 +382,7 @@ img {
   object-fit: cover;
   object-position: center;
   opacity: 0;
-  animation: promoSlide 25s infinite;
+  animation: promoSlide 35s infinite;
 }
 
 .menu-promo-visual .promo-slide {
